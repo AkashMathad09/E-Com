@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Your E-commerce Store</h1>
+    <div class="container">
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="number" id="stock" placeholder="Stock Quantity" required>
+            <input type="number" id="price" placeholder="Price" required>
+            <button type="button" onclick="addProduct()">Add Product</button>
+        </form>
+
+        <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProduct()">
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
