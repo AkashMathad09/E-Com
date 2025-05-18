@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inventory Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop | Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <h1>Inventory Management</h1>
-    <a href="add_product.html" class="add-btn">+ Add Product</a>
+    <div class="container nav-bar">
+      <h1 class="logo">E-Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="view_products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProduct()" />
-
-  <section id="productList">
-    <!-- Products will be injected here by JS -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to E-Shop</h2>
+      <p>Find the best deals on your favorite products</p>
+      <a href="view_products.html" class="btn">Shop Now</a>
+    </div>
   </section>
 
-  <script src="script.js"></script>
+  <section class="featured">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid" id="featuredProducts">
+        <!-- Products will be injected here using JS -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 E-Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/home.js"></script>
 </body>
+
 </html>
